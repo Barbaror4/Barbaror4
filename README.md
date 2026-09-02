@@ -69,7 +69,7 @@ sorularının peşinden gitmeyi seviyorum.
 <p align="center">
   <img src="./assets/stm32.png" height="65" alt="STM32">
   &nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="./assets/jieli.png" height="65" alt="JieLi">
+  <img src="./assets/JieLi-Tech.jpg" height="65" alt="JieLi">
   &nbsp;&nbsp;&nbsp;&nbsp;
   <img src="./assets/nationalchip.png" height="65" alt="NationalChip">
   &nbsp;&nbsp;&nbsp;&nbsp;
