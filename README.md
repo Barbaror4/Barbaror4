@@ -73,7 +73,7 @@ sorularının peşinden gitmeyi seviyorum.
   &nbsp;&nbsp;&nbsp;&nbsp;
   <img src="./assets/nationalchip.png" height="65" alt="NationalChip">
   &nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="./assets/generalplus.png" height="65" alt="Generalplus">
+  <img src="./assets/generalplus.jpg" height="65" alt="Generalplus">
 </p>
 
 <div align="center">
