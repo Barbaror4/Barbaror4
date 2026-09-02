@@ -490,7 +490,7 @@ research:
   - SDK archaeology
   - Trial & error
 ```
-
+```
 barbaror4@bench:~$ tools --summary
 
 Languages   : C, C++, Python
@@ -500,6 +500,7 @@ Debugging   : UART, ADB, logs, multimeter, CH341A
 Specialty   : firmware, embedded audio, reverse engineering
 Lab budget  : yes
 Creativity  : also yes
+```
 ---
 
 # `./currently_interested_in`
