@@ -431,12 +431,14 @@ Limited hardware + creativity > buying the solution
 
 <div align="center">
 
-![C](https://img.shields.io/badge/C-A8B9CC?style=flat-square\&logo=c\&logoColor=black)
-![C++](https://img.shields.io/badge/C++-00599C?style=flat-square\&logo=cplusplus\&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square\&logo=python\&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=flat-square\&logo=git\&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square\&logo=github\&logoColor=white)
-![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=flat-square\&logo=visualstudiocode\&logoColor=white)
+![C](https://img.shields.io/badge/C-A8B9CC?style=flat-square&logo=c&logoColor=black)
+![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)
+![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=flat-square&logo=visualstudiocode&logoColor=white)
+![Code::Blocks](https://img.shields.io/badge/Code::Blocks-IDE-2C3E50?style=flat-square)
+![STM32CubeIDE](https://img.shields.io/badge/STM32CubeIDE-03234B?style=flat-square&logo=stmicroelectronics&logoColor=white)
 
 </div>
 
@@ -446,28 +448,58 @@ languages:
   - C++
   - Python
 
-embedded:
+ides:
   - STM32CubeIDE
+  - Code::Blocks
+  - Visual Studio Code
+
+embedded:
   - STM32 HAL
   - ESP32
   - ESP8266
 
-debugging:
+interfaces:
   - UART
+  - USB
+  - SPI
+  - I2C
+  - I2S
+  - SDIO
+
+debugging:
+  - UART logs
   - ADB
   - Linux logs
   - USB descriptors
   - Multimeter
   - CH341A
+  - Firmware dumps
 
-other:
+software:
   - Git
   - GitHub
   - Linux
+  - ADB
+  - STM32CubeIDE
+  - Code::Blocks
+
+research:
   - Datasheets
+  - SDK source code
+  - Firmware analysis
   - SDK archaeology
+  - Trial & error
 ```
 
+barbaror4@bench:~$ tools --summary
+
+Languages   : C, C++, Python
+IDEs        : STM32CubeIDE, Code::Blocks, VS Code
+Platforms   : STM32, ESP32, ESP8266
+Debugging   : UART, ADB, logs, multimeter, CH341A
+Specialty   : firmware, embedded audio, reverse engineering
+Lab budget  : yes
+Creativity  : also yes
 ---
 
 # `./currently_interested_in`
