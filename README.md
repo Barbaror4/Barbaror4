@@ -14,13 +14,16 @@ Working with STM32F103, F411 and F746, alongside ESP32/ESP8266. Particularly int
 
 ./interests Embedded audio, USB Audio & DSP STM32 peripherals, DMA and real-time systems Firmware analysis & reverse engineering JieLi SDKs and obscure SoCs Audio codecs, DACs, FFT & parametric EQ Reusing old and inexpensive hardware ./projects 
 
-STM32F746G-DISCO Media Player
+MagicEMU:
+https://github.com/Barbaror4/MAGICEMU
+MagicEMU is an advanced retro emulation and multimedia platform built for the STM32F746G-DISCO discovery board (ARM Cortex-M7 @ 216 MHz, 8 MB external SDRAM, 480x272 LTDC display, WM8994 audio codec, MicroSD over 4-bit SDMMC).
 
-Audio playback, USB Audio and Mass Storage Ethernet radio, recording and audio DSP Touchscreen UI, FFT visualization and EQ 
+Linux-stm32f7-disco:
+https://github.com/Barbaror4/linux-stm32f7-disco
 
-MagicJL / JieLi
+A working Linux 2.6.33 (uClinux / NOMMU) port for the low-cost STMicroelectronics STM32F746G-DISCO board — a 216 MHz Cortex-M7 with only 8 MB of external SDRAM and no MMU. 
 
-Custom firmware and SDK exploration Audio features, UI modifications and language support ./tools 
+./tools 
 
 
 
