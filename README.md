@@ -37,12 +37,12 @@ Working with STM32F103, STM32F411, and STM32F746 platforms, alongside ESP32/ESP8
 - 
 - **MagicJL UNO** — custom Arduino UNO sized PCB design for JieLi-based development.
  <p align="center">
-  <img src="./assets/magicjl-uno.jpg" width="42%" alt="MagicJL UNO PCB">
+  <img src="./assets/magicjl-plus.png" width="42%" alt="MagicJL UNO PCB">
  </p>
  
 - **MagicJL PLUS** — a further custom hardware design for the MagicJL platform.
 - <p align="center">
-  <img src="./assets/magicjl-plus.png" width="42%" alt="MagicJL PLUS PCB design">
+  <img src="./assets/magicjl-uno.jpg" width="42%" alt="MagicJL PLUS PCB design">
   </p>
 The goal is to explore the capabilities of JieLi platforms beyond their original implementations through firmware development, reverse engineering, and custom hardware.
 
