@@ -4,7 +4,7 @@ BARBAROR4
 
 barbaror4@bench:~$ whoami Electronics enthusiast focused on embedded systems, firmware analysis, low-level development and audio. I like understanding how things work — and finding out what more can be done with the hardware I have. ./hardware 
 
-<p align="center"> <img src="./assets/stm32.png" height="48" alt="STM32">   <img src="./assets/JieLi-Tech.JPG" height="48" alt="JieLi">   <img src="./assets/nationalchip.png" height="48" alt="NationalChip">   <img src="./assets/generalplus.jpg" height="48" alt="Generalplus"> </p>
+<p align="center"> <img src="./assets/stm32.png" height="48" alt="STM32">   <img src="./assets/JieLi-Tech.jpg" height="48" alt="JieLi">   <img src="./assets/nationalchip.png" height="48" alt="NationalChip">   <img src="./assets/generalplus.jpg" height="48" alt="Generalplus"> </p>
 
 
 
