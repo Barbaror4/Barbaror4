@@ -22,7 +22,7 @@ out what more can be done with the hardware I have.
   &nbsp;
   <img src="./assets/jieli.png" height="48" alt="JieLi">
   &nbsp;
-  <img src="./assets/nationalchip.png" height="48" alt="NationalChip">
+  <img src="./assets/nationalchip.jpg" height="48" alt="NationalChip">
   &nbsp;
   <img src="./assets/generalplus.png" height="48" alt="Generalplus">
 </p>"STM32" (https://img.shields.io/badge/STM32-03234B?style=flat-square)
