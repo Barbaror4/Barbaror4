@@ -20,7 +20,7 @@ out what more can be done with the hardware I have.
 <p align="center">
   <img src="./assets/stm32.png" height="48" alt="STM32">
   &nbsp;
-  <img src="./assets/Jieli-Tech.jpg" height="48" alt="JieLi">
+  <img src="./assets/JieLi-Tech.jpg" height="48" alt="JieLi">
   &nbsp;
   <img src="./assets/nationalchip.png" height="48" alt="NationalChip">
   &nbsp;
