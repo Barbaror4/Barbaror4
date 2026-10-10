@@ -20,11 +20,11 @@ out what more can be done with the hardware I have.
 <p align="center">
   <img src="./assets/stm32.png" height="48" alt="STM32">
   &nbsp;
-  <img src="./assets/jieli.png" height="48" alt="JieLi">
+  <img src="./assets/Jieli-Tech.jpg" height="48" alt="JieLi">
   &nbsp;
-  <img src="./assets/nationalchip.jpg" height="48" alt="NationalChip">
+  <img src="./assets/nationalchip.png" height="48" alt="NationalChip">
   &nbsp;
-  <img src="./assets/generalplus.png" height="48" alt="Generalplus">
+  <img src="./assets/generalplus.jpg" height="48" alt="Generalplus">
 </p>"STM32" (https://img.shields.io/badge/STM32-03234B?style=flat-square)
 "ESP32" (https://img.shields.io/badge/ESP32-E7352C?style=flat-square&logo=espressif&logoColor=white)
 "ESP8266" (https://img.shields.io/badge/ESP8266-E7352C?style=flat-square&logo=espressif&logoColor=white)
