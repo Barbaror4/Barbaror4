@@ -1,94 +1,132 @@
-# BARBAROR4
+<h1 align="center">Barbaros A.Y. · <code>barbaror4</code></h1>
 
 <p align="center">
-  <b>Embedded Systems • Firmware Development • Reverse Engineering • Audio DSP</b>
+  <b>Embedded firmware · Reverse engineering · Audio SoCs · PCB design</b>
+  <br>
+  <sub>Türkiye · building at <a href="https://github.com/OmfoBalkanMicroElectronics">@OmfoBalkanMicroElectronics</a></sub>
   <br><br>
-  <img src="https://img.shields.io/badge/Embedded-Systems-2ea44f?style=flat-square" alt="Embedded Systems">
-  <img src="https://img.shields.io/badge/JieLi-AC692x-blue?style=flat-square" alt="JieLi AC692x">
-  <img src="https://img.shields.io/badge/Firmware-Development-8A2BE2?style=flat-square" alt="Firmware Development">
-  <img src="https://img.shields.io/badge/PCB-Hardware_Design-orange?style=flat-square" alt="PCB Hardware Design">
+  <img src="https://img.shields.io/badge/JieLi-AC692x-1f6feb?style=flat-square" alt="JieLi AC692x">
+  <img src="https://img.shields.io/badge/STM32-F1%20%7C%20F4%20%7C%20F7-03234B?style=flat-square&logo=stmicroelectronics&logoColor=white" alt="STM32">
+  <img src="https://img.shields.io/badge/ESP32-ESP8266-E7352C?style=flat-square&logo=espressif&logoColor=white" alt="ESP32 / ESP8266">
+  <img src="https://img.shields.io/badge/C%20%2F%20C%2B%2B-firmware-00599C?style=flat-square&logo=c&logoColor=white" alt="C / C++">
+  <img src="https://img.shields.io/badge/PCB-hardware%20design-orange?style=flat-square" alt="PCB design">
 </p>
 
 ```console
 barbaror4@bench:~$ whoami
+Firmware developer who takes cheap, undocumented chips apart
+and makes them do things their datasheets never promised.
 ```
 
-Electronics enthusiast focused on embedded development, firmware analysis, and audio hardware. I enjoy exploring obscure SoCs, understanding undocumented systems, and pushing inexpensive hardware beyond its original capabilities.
+I work on embedded systems from the bare metal up: reading datasheets, dumping firmware, tracing undocumented SDKs, and designing the boards to run it all on. My main focus is **JieLi audio SoCs**, plus STM32 and other low-cost platforms that deserve more attention than they get.
 
-## ./hardware
+---
+
+## 🔧 ./projects
+
+### [MagicJieLi (MagicJL)](https://github.com/OmfoBalkanMicroElectronics/MagicJieLi) · *main project*
+
+Custom firmware and hardware for the **JieLi AC6925** (AC692x), a Bluetooth audio SoC with 128 KB of RAM and 512 KB of flash that normally runs cheap speakers. MagicJL turns it into a full media player, one generation at a time:
+
+| Generation | Display | What it brought |
+|---|---|---|
+| **MagicJL** v1.0 · [released](https://github.com/OmfoBalkanMicroElectronics/MagicJieLi/releases) | 128×64 I²C OLED | Fixed-point 256-point FFT spectrum analyzer (no FPU), AVRCP now-playing, Arduino Nano boot dongle, verified flash backup & restore |
+| **MagicJL Plus** · *tested on AC6925A* | 128×64 SSD1306 OLED | External SPI-flash font pack with **37 UI languages** (CJK, Arabic, Hebrew, Thai, Vietnamese), app launcher with background play, DS3231 clock & calendar, text reader with on-screen keyboard, favourites, custom 5-band EQ, one-file USB update for firmware + fonts, crash reporter |
+| **MagicJL Color 2.0** · *in development, not yet on hardware* | 1.69" ST7789 240×280 IPS | Full-colour animated GUI on a frame-buffer-less strip renderer with SPI DMA, spring physics and anti-aliased Inter type; FM, Bluetooth calls, USB/SD music, alarm clock; a PC simulator and **MagicJL Studio** (an interactive Windows simulator of the whole board); also builds for a bare AC6921A with a PCM5102A I²S DAC |
 
 <p align="center">
-  <img src="./assets/stm32.png" height="48" alt="STM32">
-  <img src="./assets/JieLi-Tech.jpg" height="48" alt="JieLi">
-  <img src="./assets/nationalchip.png" height="48" alt="NationalChip">
-  <img src="./assets/generalplus.jpg" height="48" alt="Generalplus">
+  <img src="./assets/magicjl-plus-hardware.jpg" width="92%" alt="MagicJL Plus running on real BT201 hardware with an SSD1306 OLED">
+  <br>
+  <sub>MagicJL Plus on real hardware (BT201, AC6925A, SSD1306 OLED)</sub>
 </p>
 
-Working with STM32F103, STM32F411, and STM32F746 platforms, alongside ESP32/ESP8266. My primary focus is JieLi audio SoCs, custom firmware, and hardware design.
+<p align="center">
+  <img src="./assets/magicjl-color.png" width="92%" alt="MagicJL Color 2.0 screens: launcher, now playing, settings, clock">
+  <br>
+  <sub>MagicJL Color 2.0, rendered by the PC simulator from the firmware's own GUI code</sub>
+</p>
 
-## ./projects
-
-### [MagicJieLi — MagicJL](https://github.com/OmfoBalkanMicroElectronics/MagicJieLi)
-
-**My main area of development:** custom firmware and hardware projects built around JieLi AC692x audio SoCs.
-
-- **MagicJL Color** — custom firmware development for AC692x-based devices.
-- **MagicJL Plus** — feature-rich firmware with expanded functionality.
-- 
-- **MagicJL UNO** — custom Arduino UNO sized PCB design for JieLi-based development.
- <p align="center">
-  <img src="./assets/magicjl-plus.png" width="42%" alt="MagicJL UNO PCB">
- </p>
- 
-- **MagicJL PLUS** — a further custom hardware design for the MagicJL platform.
-- <p align="center">
-  <img src="./assets/magicjl-uno.jpg" width="42%" alt="MagicJL PLUS PCB design">
-  </p>
-The goal is to explore the capabilities of JieLi platforms beyond their original implementations through firmware development, reverse engineering, and custom hardware.
-
-### [MAGICEMU](https://github.com/Barbaror4/MAGICEMU)
-
-Retro emulation and multimedia on the STM32F746G-DISCO.
-
-- NES emulation, DOOM, and Wolfenstein 3D
-- Audio and multimedia features
-- Display, storage, and peripheral integration
-
-### [Linux on STM32F7-DISCO](https://github.com/Barbaror4/linux-stm32f7-disco)
-
-A Linux 2.6.33 uClinux/NOMMU port for the STM32F746G-DISCO, exploring embedded Linux on a Cortex-M7 platform without an MMU.
-
-## ./interests
-
-- JieLi AC692x firmware and SDK development
-- Firmware reverse engineering and undocumented SoCs
-- Custom PCB design and embedded hardware
-- Embedded audio, USB Audio, and DSP
-- STM32 peripherals, DMA, and real-time systems
-- Audio codecs, DACs, FFT, and parametric EQ
-
-## ./tools
-
-**IDEs:** Code::Blocks · STM32CubeIDE · VS Code
-
-**Hardware:** Multimeter · CH341A · USB-UART adapters
-
-**Debugging:** UART logs · Firmware dumps · Software diagnostics
-
-## ./philosophy
-
-I work with the tools and hardware I have, learning through datasheets, source code, experimentation, and reverse engineering.
-
-> Expensive ≠ Interesting  
-> Old ≠ Useless  
-> Cheap ≠ Simple
-
-**Understand it. Modify it. Push it further.**
+Custom boards for the platform:
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Barbaror4&show_icons=true&hide_border=true&theme=transparent" height="150" alt="GitHub stats">
+  <img src="./assets/magicjl-plus.png" width="42%" alt="MagicJL UNO PCB">
+  &nbsp;
+  <img src="./assets/magicjl-uno.jpg" width="42%" alt="MagicJL PLUS PCB">
   <br>
-  <img src="https://komarev.com/ghpvc/?username=Barbaror4&style=flat-square&label=PROFILE+VIEWS" alt="Profile views">
+  <sub>MagicJL UNO (Arduino UNO–sized dev board) · MagicJL PLUS board (AC6921A8 + SH1106 SPI OLED, the hardware target for MagicJL Plus)</sub>
+</p>
+
+### MAGICEMU · *repository temporarily private*
+
+Retro gaming and multimedia on the **STM32F746G-DISCO**: NES emulation, **DOOM** and **Wolfenstein 3D**, an MP3/FLAC player with FFT, Motion-JPEG video and exFAT support on a Cortex-M7.
+
+> The repository is private for now while its third-party licensing (bundled libraries, fonts and assets) is being cleaned up. It will be public again once that's done.
+
+### [linux-stm32f7-disco](https://github.com/Barbaror4/linux-stm32f7-disco)
+
+**Linux 2.6.33 (uClinux / NOMMU)** running on the STM32F746G-DISCO, with an SD-card root filesystem, USB-HID keyboard host and Ethernet. Real Linux on a microcontroller with no MMU.
+
+## 🤝 ./contributing
+
+### [SoundVisualizer](https://github.com/CaYatur/SoundVisualizer)
+
+Open-source, cross-platform music visualizer and VJ tool (MilkDrop engine, GPU effects, OBS overlay, RGB lighting).
+
+- Proposed and prototyped the **floating picture-in-picture output window** ([PR #592](https://github.com/CaYatur/SoundVisualizer/pull/592)), which is now part of the app
+- Reverse-engineered Pioneer's **`.lkd` OEL animation format** (gzip → tar → stacked BMP strip), verified against 83 real files
+
+---
+
+## 🧩 ./hardware
+
+<p align="center">
+  <img src="./assets/JieLi-Tech.jpg" height="44" alt="JieLi">
+  &nbsp;&nbsp;
+  <img src="./assets/stm32.png" height="44" alt="STM32">
+  &nbsp;&nbsp;
+  <img src="./assets/nationalchip.png" height="44" alt="NationalChip">
+  &nbsp;&nbsp;
+  <img src="./assets/generalplus.jpg" height="44" alt="Generalplus">
+</p>
+
+- **JieLi:** AC692x firmware, SDK internals, custom boards
+- **STM32:** F103 · F411 · F746
+- **Espressif:** ESP32 · ESP8266
+- **Displays:** SSD1306 OLED · ST7920 · ST7789 IPS
+- **Others:** NationalChip / GuoXin, Generalplus, PIC, AVR
+
+## 🎧 ./interests
+
+```text
+├── JieLi AC692x firmware & SDK development
+├── Reverse engineering undocumented SoCs and firmware
+├── Embedded audio: USB Audio, codecs, DACs, FFT, parametric EQ
+├── Embedded GUIs: frame-buffer-less rendering, SPI DMA displays, PC simulators
+├── STM32 peripherals, DMA and real-time systems
+├── Embedded Linux on NOMMU targets
+└── Custom PCB design
+```
+
+## 🛠️ ./tools
+
+| Category | Tools |
+|---|---|
+| **IDEs** | STM32CubeIDE · VS Code · Code::Blocks |
+| **Hardware** | Multimeter · CH341A programmer · USB-UART adapters |
+| **Debugging** | UART logging · firmware dumps · software diagnostics |
+
+## 💭 ./philosophy
+
+I use the hardware I have and learn from datasheets, source code, experiments and a lot of reverse engineering.
+
+> **Expensive ≠ Interesting**<br>
+> **Old ≠ Useless**<br>
+> **Cheap ≠ Simple**
+
+<p align="center">
+  <b>Understand it. Modify it. Push it further.</b>
+  <br><br>
+  <img src="https://komarev.com/ghpvc/?username=Barbaror4&style=flat-square&label=profile+views&color=1f6feb" alt="Profile views">
   <br><br>
   <i>Hardware is more fun when you dig deeper.</i>
-</p>****
+</p>
