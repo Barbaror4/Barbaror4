@@ -72,7 +72,8 @@ Retro gaming and multimedia on the **STM32F746G-DISCO**: NES emulation, **DOOM**
 
 Open-source, cross-platform music visualizer and VJ tool (Electron + WebGL, MilkDrop engine, GPU effects, OBS overlay, RGB lighting).
 
-- **Stereo Trails** visualizer mode ([PR #732](https://github.com/CaYatur/SoundVisualizer/pull/732), *in review*): a particle fountain where each frequency band launches from its place in the stereo image. Per-band biquad filters measure pan and stereo spread (correlation) in about 0.07 ms per frame, covered by 16 new tests that caught all 10 deliberately injected bugs.
+- **Professional OSC output for show control** ([PR #733](https://github.com/CaYatur/SoundVisualizer/pull/733), *merged*): lets lighting desks, Resolume, TouchDesigner, MadMapper and Millumin lock to the music. It sends a beat clock (BPM, beat and bar phase, downbeat, timetagged bundles, latency offset), level and band meters, kick/snare/hat hits, 16 spectrum bands and the full show state.
+- **Stereo Trails** visualizer mode ([PR #732](https://github.com/CaYatur/SoundVisualizer/pull/732), *merged*): a particle fountain where each frequency band launches from its place in the stereo image. Per-band biquad filters measure pan and stereo spread in about 0.07 ms per frame, covered by 16 new tests that caught all 10 deliberately injected bugs.
 - **Floating picture-in-picture output window**, proposed and prototyped in [PR #592](https://github.com/CaYatur/SoundVisualizer/pull/592) and now part of the app
 - Reverse-engineered Pioneer's **`.lkd` OEL animation format** (gzip → tar → stacked BMP strip), verified against 83 real files
 
