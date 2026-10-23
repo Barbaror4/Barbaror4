@@ -31,7 +31,7 @@ Custom firmware and hardware for the **JieLi AC6925** (AC692x), a Bluetooth audi
 | Generation | Display | What it brought |
 |---|---|---|
 | **MagicJL** v1.0 · [released](https://github.com/OmfoBalkanMicroElectronics/MagicJieLi/releases) | 128×64 I²C OLED | Fixed-point 256-point FFT spectrum analyzer (no FPU), AVRCP now-playing, Arduino Nano boot dongle, verified flash backup & restore |
-| **MagicJL Plus** · *tested on AC6925A* | 128×64 SSD1306 OLED | External SPI-flash font pack with **37 UI languages** (CJK, Arabic, Hebrew, Thai, Vietnamese), app launcher with background play, DS3231 clock & calendar, text reader with on-screen keyboard, favourites, custom 5-band EQ, one-file USB update for firmware + fonts, crash reporter |
+| **MagicJL Plus** · *tested on AC6925A* | 128×64 SSD1306 OLED | External SPI-flash font pack with **37 UI languages** (CJK, Arabic, Hebrew, Thai, Vietnamese), app launcher with background play, DS3231 clock & calendar, text reader with on-screen keyboard, favourites, custom 5-band EQ, one-file USB update for firmware + fonts, crash reporter. Full firmware & details at https://usmi.mybb.ru/viewtopic.php?id=88 |
 | **MagicJL Color 2.0** · *in development, not yet on hardware* | 1.69" ST7789 240×280 IPS | Full-colour animated GUI on a frame-buffer-less strip renderer with SPI DMA, spring physics and anti-aliased Inter type; FM, Bluetooth calls, USB/SD music, alarm clock; a PC simulator and **MagicJL Studio** (an interactive Windows simulator of the whole board); also builds for a bare AC6921A with a PCM5102A I²S DAC |
 
 <p align="center">
