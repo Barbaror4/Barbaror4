@@ -3,7 +3,6 @@
 <p align="center">
   <b>Embedded firmware · Reverse engineering · Audio SoCs · PCB design</b>
   <br>
-  <sub>Türkiye · building at <a href="https://github.com/OmfoBalkanMicroElectronics">@OmfoBalkanMicroElectronics</a></sub>
   <br><br>
   <img src="https://img.shields.io/badge/JieLi-AC692x-1f6feb?style=flat-square" alt="JieLi AC692x">
   <img src="https://img.shields.io/badge/STM32-F1%20%7C%20F4%20%7C%20F7-03234B?style=flat-square&logo=stmicroelectronics&logoColor=white" alt="STM32">
